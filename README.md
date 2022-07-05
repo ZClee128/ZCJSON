@@ -7,7 +7,49 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### Dictionary->model(底层方法)
+
+```swift
+let decoder = JSONDecoder()
+try decoder.decode(Model.self, from: data)
+
+```
+
+### Dictionary转模型(封装方法)
+```swift
+    let model =  data.asDecodable(Model.self)
+```
+
+### model->json 
+```swift
+model.toJSONString()
+```
+
+### Enum
+
+对于枚举类型请遵循 `CaseDefaultsFirst` 协议，如果解析失败会返回默认 case
+
+**Note: 枚举使用强类型解析，关联类型和数据类型不一致不会进行类型转换，会解析为默认第一个case**
+
+```swift
+enum Enum: Int, Codable, CaseDefaultsFirst {
+    
+    case case1
+    case case2
+    case case3
+    
+}
+```
+
+
+```
+因为Codable不支持模型默认值，所以扩展一个解析类 DefaultValueDecoder
+```
+```
+用法如下：
+    @Default<Bool.True> var translatSuccess: Bool
+    只要遵循DefaultValue这个协议就可以
+    目前只扩展了Bool值，后续需要扩展可以参考DefaultValueDecoder实现
 
 ## Requirements
 
@@ -22,7 +64,7 @@ pod 'ZCJSON'
 
 ## Author
 
-18162711, 876231865@qq.com
+ZClee128, 876231865@qq.com
 
 ## License
 
