@@ -17,7 +17,7 @@ try decoder.decode(Model.self, from: data)
 
 ### Dictionary转模型(封装方法)
 ```swift
-    let model =  data.asDecodable(Model.self)
+let model =  data.asDecodable(Model.self)
 ```
 
 ### model->json 
@@ -33,7 +33,6 @@ model.toJSONString()
 
 ```swift
 enum Enum: Int, Codable, CaseDefaultsFirst {
-    
     case case1
     case case2
     case case3
@@ -44,16 +43,54 @@ enum Enum: Int, Codable, CaseDefaultsFirst {
 
 ```
 因为Codable不支持模型默认值，所以扩展一个解析类 DefaultValueDecoder
-```
-```
 用法如下：
     @Default<Bool.True> var translatSuccess: Bool
     只要遵循DefaultValue这个协议就可以
     目前只扩展了Bool值，后续需要扩展可以参考DefaultValueDecoder实现
+```
 
-## Requirements
+## 可以解析Any
+```
+struct DicModel: Codable {
+    var data: [String: Any]?
+    
+    init() {
+        
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case data
+    }
+//
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        data = try values.decodeIfPresent([String: Any].self, forKey: .data)
+    }
 
-## Installation
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(data ?? [:], forKey: .data)
+    }
+}
+
+struct ArrModel: Codable {
+    var data: [Any]?
+    
+    enum CodingKeys: String, CodingKey {
+        case data
+    }
+//
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        data = try values.decodeIfPresent([Any].self, forKey: .config)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(data ?? [], forKey: .data)
+    }
+}
+```
 
 ZCJSON is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
