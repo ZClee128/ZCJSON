@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.author           = { 'ZClee128' => '876231865@qq.com' }
   s.source           = { :git => 'https://github.com/ZClee128/ZCJSON.git', :tag => s.version.to_s }
   s.social_media_url = 'https://www.jianshu.com/u/072b722d9fcc'
-
+  s.swift_version = '5.0'
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'ZCJSON/Classes/**/*'
