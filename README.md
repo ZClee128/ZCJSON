@@ -50,7 +50,7 @@ enum Enum: Int, Codable, CaseDefaultsFirst {
 ```
 
 ## 可以解析Any
-```
+```swift
 struct DicModel: Codable {
     var data: [String: Any]?
     
@@ -92,7 +92,7 @@ struct ArrModel: Codable {
 }
 ```
 ## 实战
-```
+```swift
 public enum Nested: String, Codable, CaseDefaultsFirst {
   
     case none
@@ -127,7 +127,7 @@ struct TestModel: Codable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         data = try values.decodeIfPresent([String: Any].self, forKey: .data)
         integer = try values.decodeIfPresent(Bool.self, forKey: .integer) ?? true
-        boolean = try values.decodeIfPresent(Int.self, forKey: .keyNotFound)
+        boolean = try values.decodeIfPresent(Int.self, forKey: .boolean)
         double = try values.decodeIfPresent(String.self, forKey: .double) ?? ""
         nested = try values.decodeIfPresent(Nested.self, forKey: .nested)
     }

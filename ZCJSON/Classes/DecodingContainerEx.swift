@@ -76,8 +76,10 @@ extension KeyedDecodingContainer {
         if let str = try? decode(type, forKey: key) {
             return str
         } else if let int = try? decodeNil(Int.self, forKey: key) {
-            return String(int)
+            guard let i = int else {return nil}
+            return String(i)
         } else if let dic = try? decodeIfPresent([String: Any].self, forKey: key) {
+            guard let dic = dic else { return nil}
             if (!JSONSerialization.isValidJSONObject(dic)) {
                 print("无法解析出JSONString")
                 return nil
