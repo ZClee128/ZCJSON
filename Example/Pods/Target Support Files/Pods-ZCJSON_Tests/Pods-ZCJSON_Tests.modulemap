@@ -1,0 +1,6 @@
+framework module Pods_ZCJSON_Tests {
+  umbrella header "Pods-ZCJSON_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

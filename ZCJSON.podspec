@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZCJSON'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ZCJSON.'
+  s.summary          = '这是一个原生增强版json解析库，不需要更改遵循Codable协议，完美符合官方'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  这是一个原生增强版json解析库，不需要更改遵循Codable协议，完美符合官方
                        DESC
 
-  s.homepage         = 'https://github.com/18162711/ZCJSON'
+  s.homepage         = 'https://github.com/ZClee128/ZCJSON'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '18162711' => '876231865@qq.com' }
-  s.source           = { :git => 'https://github.com/18162711/ZCJSON.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'ZClee128' => '876231865@qq.com' }
+  s.source           = { :git => 'https://github.com/ZClee128/ZCJSON.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://www.jianshu.com/u/072b722d9fcc'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ZCJSON/Classes/**/*'
   
