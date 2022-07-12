@@ -91,20 +91,11 @@ extension KeyedDecodingContainer {
         }
     }
     
-    public func decodeIfPresent<T>(_ type: T.Type, forKey key: K) throws -> T? where T : Decodable {
-        if type == CGFloat.self {
-            guard let float = try decodeIfPresent(Double.self, forKey: key) else {
-                return nil
-            }
-            return CGFloat(float) as? T
-        } else if type == String.self {
-            guard let str = try decodeIfPresent(String.self, forKey: key) else {
-                return nil
-            }
-            return str as? T
-        } else {
-            return try? decode(type, forKey: key)
+    public func decodeIfPresent(_ type: CGFloat.Type, forKey key: K) throws -> CGFloat? {
+        guard let float = try decodeIfPresent(Double.self, forKey: key) else {
+            return nil
         }
+        return CGFloat(float)
     }
     
     public func decode<T>(_ type: T.Type, forKey key: Self.Key) throws -> T where T: CaseDefaultsFirst {
