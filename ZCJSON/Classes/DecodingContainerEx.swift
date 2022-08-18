@@ -113,11 +113,10 @@ extension KeyedDecodingContainer {
         guard
             let value = try decodeIfPresent(Int.self, forKey: key)
         else {
-            return 0
+            return key.intValue ?? 0
         }
         return value
     }
-    
     
     public func decodeNil(_ type: Int.Type, forKey key: Self.Key) throws -> Int? {
         guard

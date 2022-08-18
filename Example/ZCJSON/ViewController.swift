@@ -18,11 +18,17 @@ public enum Nested: String, Codable, CaseDefaultsFirst {
     
     
 }
+public protocol custom {
+    
+}
+
+public typealias Codable = Decodable & Encodable 
 
 struct TestModel: Codable {
-    var boolean: Int?
-    @Default<Bool.True>
-    var integer: Bool
+    
+    
+    var boolean: Int = 3
+    var integer: Bool = true
     var double: String?
     var nested: Nested?
     var data: [String: Any]?
@@ -43,7 +49,7 @@ struct TestModel: Codable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         data = try values.decodeIfPresent([String: Any].self, forKey: .data)
         integer = try values.decodeIfPresent(Bool.self, forKey: .integer) ?? true
-        boolean = try values.decodeIfPresent(Int.self, forKey: .boolean)
+        boolean = try values.decodeIfPresent(Int.self, forKey: .boolean) ?? self.boolean
         double = try values.decodeIfPresent(String.self, forKey: .double) ?? ""
         nested = try values.decodeIfPresent(Nested.self, forKey: .nested)
     }
@@ -65,7 +71,6 @@ class ViewController: UIViewController {
         let json = #"""
                {
                "status" : 0,
-                "integer": true,
                 "data" : {
                  "salt" : "e7f820",
                  "expires_time" : 0,
@@ -76,10 +81,10 @@ class ViewController: UIViewController {
         
         do {
             let decoder = JSONDecoder()
-            let model = try decoder.decode(TestModel.self, from: json)
+            var model = try decoder.decode(TestModel.self, from: json)
             debugPrint("boolean:", model.boolean)
-            debugPrint("nested.a:", model.nested)
-            debugPrint("dict:", model.data, model.double, model.integer)
+            debugPrint("nested.a:", model.integer)
+//            debugPrint("dict:", model.data, model.double, model.integer)
             
         } catch {
             debugPrint(error)
