@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "ZCJSON"),
         .testTarget(
-            name: "PackageTests",
+            name: "ZCJSONTests",
             dependencies: ["ZCJSON"]),
     ]
 )
