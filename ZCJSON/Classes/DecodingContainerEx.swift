@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 extension KeyedDecodingContainer {
+    
     public func decodeIfPresent<T: Decodable>(_ type: T.Type, forKey key: Key) throws -> T? where T: RawRepresentable, T.RawValue: Decodable {
         guard
             let rawValue = try decodeIfPresent(type.RawValue.self, forKey: key),
@@ -70,8 +71,7 @@ extension KeyedDecodingContainer {
             return nil
         }
     }
-    
-    
+        
     public func decodeIfPresent(_ type: String.Type, forKey key: Key) throws -> String? {
         if let str = try? decode(type, forKey: key) {
             return str
@@ -97,6 +97,22 @@ extension KeyedDecodingContainer {
         }
         return CGFloat(float)
     }
+    
+//    public func decodeIfPresent<T>(_ type: T.Type, forKey key: K) throws -> T? where T : Decodable {
+//        if type == CGFloat.self {
+//            guard let float = try decodeIfPresent(Double.self, forKey: key) else {
+//                return nil
+//            }
+//            return CGFloat(float) as? T
+//        } else if type == String.self {
+//            guard let str = try decodeIfPresent(String.self, forKey: key) else {
+//                return nil
+//            }
+//            return str as? T
+//        } else {
+//            return try? decode(type, forKey: key)
+//        }
+//    }
     
     public func decode<T>(_ type: T.Type, forKey key: Self.Key) throws -> T where T: CaseDefaultsFirst {
         guard
@@ -130,5 +146,4 @@ extension KeyedDecodingContainer {
     public func decode<T>(_ type: T.Type, forKey key: Self.Key) throws -> T where T: DefaultValue {
         return T.defaultValue as! T
     }
-    
 }

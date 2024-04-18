@@ -21,11 +21,13 @@ public extension KeyedDecodingContainerProtocol {
     /// - throws: `DecodingError.valueNotFound` if `self` has a null entry for
     ///   the given key.
     func decode(_ type: Dictionary<String, Any>.Type, forKey key: Key) throws -> Dictionary<String, Any> {
-        if try decodeNil(forKey: key) {
+        let container = try self.nestedContainer(keyedBy: DictionaryKeys.self, forKey: key)
+        do {
+            let dic = try container.decode(type)
+            return dic
+        } catch {
             return [:]
         }
-        let container = try self.nestedContainer(keyedBy: DictionaryKeys.self, forKey: key)
-        return try container.decode(type)
     }
 
     /// Decodes a value of the given type for the given key.
@@ -41,11 +43,13 @@ public extension KeyedDecodingContainerProtocol {
     /// - throws: `DecodingError.valueNotFound` if `self` has a null entry for
     ///   the given key.
     func decode(_ type: Array<Any>.Type, forKey key: Key) throws -> Array<Any> {
-        if try decodeNil(forKey: key) {
+        var container = try self.nestedUnkeyedContainer(forKey: key)
+        do {
+            let arr = try container.decode(type)
+            return arr
+        } catch {
             return []
         }
-        var container = try self.nestedUnkeyedContainer(forKey: key)
-        return try container.decode(type)
     }
 
     /// Decodes a value of the given type for the given key, if present.
