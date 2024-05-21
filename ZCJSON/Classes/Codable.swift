@@ -28,6 +28,15 @@ public extension Encodable {
     }
 }
 
+public extension String {
+    func asDecodable<T: Decodable>(_ type: T.Type) -> T? {
+        if let model = try? JSONDecoder().decode(type, from: Data(self.utf8)) {
+            return model
+        }
+        return nil
+    }
+}
+
 public extension Dictionary {
     func asDecodable<T: Decodable>(_ type: T.Type) -> T? {
         if let data = try? JSONSerialization.data(withJSONObject: self, options: .fragmentsAllowed), let model = try? JSONDecoder().decode(type, from: data) {
