@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZCJSON'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = '这是一个原生增强版json解析库，不需要更改遵循Codable协议，完美符合官方'
 
 # This description is used to generate tags and improve search results.
@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
   s.author           = { 'ZClee128' => '876231865@qq.com' }
   s.source           = { :git => 'https://github.com/ZClee128/ZCJSON.git', :tag => s.version.to_s }
   s.social_media_url = 'https://www.jianshu.com/u/072b722d9fcc'
-  s.swift_version = '5.0'
-  s.ios.deployment_target = '9.0'
+  s.swift_version = '5.9'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'ZCJSON/Classes/**/*'
   
@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'ZCMacro'
 end

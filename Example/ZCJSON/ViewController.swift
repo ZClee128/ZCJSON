@@ -8,9 +8,12 @@
 
 import UIKit
 import ZCJSON
+import ZCMacro
 
-public enum Nested: String, Codable, CaseDefaultsFirst {
-  
+public enum Nested: String, Codable, ZCCodable {
+    public static var defaultValue: Nested {
+        return .none
+    }
     case none
     case first
     case sencond
@@ -24,44 +27,16 @@ public protocol custom {
 
 public typealias Codable = Decodable & Encodable 
 
+@zcCodable
 struct TestModel: Codable {
     
-    
-    var boolean: Int = 3
-    var integer: Bool = true
+    @zcAnnotation(key: ["boolean"], default: 2)
+    var boolean: Int = 1
+    @zcAnnotation(default: true)
+    var use: Bool
     var double: String?
     var nested: Nested?
-    var data: [String: Any]?
-    
-//    init() {
-//
-//    }
-
-    enum CodingKeys: String, CodingKey {
-        case data
-        case integer
-        case boolean
-        case double
-        case nested
-    }
-
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        data = try values.decodeIfPresent([String: Any].self, forKey: .data)
-        integer = try values.decodeIfPresent(Bool.self, forKey: .integer) ?? true
-        boolean = try values.decodeIfPresent(Int.self, forKey: .boolean) ?? self.boolean
-        double = try values.decodeIfPresent(String.self, forKey: .double) ?? ""
-        nested = try values.decodeIfPresent(Nested.self, forKey: .nested)
-    }
-
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encodeIfPresent(data, forKey: .data)
-        try container.encodeIfPresent(integer, forKey: .integer)
-        try container.encodeIfPresent(boolean, forKey: .boolean)
-        try container.encodeIfPresent(double, forKey: .double)
-        try container.encodeIfPresent(nested, forKey: .nested)
-    }
+    let data: [String: Any]
 }
 
 class ViewController: UIViewController {
@@ -83,8 +58,8 @@ class ViewController: UIViewController {
             let decoder = JSONDecoder()
             var model = try decoder.decode(TestModel.self, from: json)
             debugPrint("boolean:", model.boolean)
-            debugPrint("nested.a:", model.integer)
-//            debugPrint("dict:", model.data, model.double, model.integer)
+            debugPrint("use:", model.use)
+            debugPrint("dict:", model.data)
             
         } catch {
             debugPrint(error)

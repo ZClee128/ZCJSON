@@ -1,0 +1,6 @@
+framework module ZCMacro {
+  umbrella header "ZCMacro-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -35,8 +35,6 @@ extension KeyedDecodingContainer {
     public func decodeIfPresent(_ type: Bool.Type, forKey key: Key) throws -> Bool? {
         if let bool = try? decode(type, forKey: key) {
             return bool
-        } else if let int = try? decode(Int.self, forKey: key) {
-            return Bool(exactly: int as NSNumber)
         } else {
             return nil
         }

@@ -1,13 +1,10 @@
 use_frameworks!
-
-platform :ios, '9.0'
+use_modular_headers!
+platform :ios, '13.0'
 
 target 'ZCJSON_Example' do
   pod 'ZCJSON', :path => '../'
-
   target 'ZCJSON_Tests' do
     inherit! :search_paths
-
-    
   end
 end

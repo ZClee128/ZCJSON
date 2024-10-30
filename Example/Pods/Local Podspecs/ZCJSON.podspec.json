@@ -1,6 +1,6 @@
 {
   "name": "ZCJSON",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "summary": "这是一个原生增强版json解析库，不需要更改遵循Codable协议，完美符合官方",
   "description": "这是一个原生增强版json解析库，不需要更改遵循Codable协议，完美符合官方",
   "homepage": "https://github.com/ZClee128/ZCJSON",
@@ -13,13 +13,18 @@
   },
   "source": {
     "git": "https://github.com/ZClee128/ZCJSON.git",
-    "tag": "0.1.5"
+    "tag": "0.1.8"
   },
   "social_media_url": "https://www.jianshu.com/u/072b722d9fcc",
-  "swift_versions": "5.0",
+  "swift_versions": "5.9",
   "platforms": {
-    "ios": "9.0"
+    "ios": "13.0"
   },
   "source_files": "ZCJSON/Classes/**/*",
-  "swift_version": "5.0"
+  "dependencies": {
+    "ZCMacro": [
+
+    ]
+  },
+  "swift_version": "5.9"
 }
