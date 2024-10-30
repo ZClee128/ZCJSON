@@ -28,9 +28,9 @@ public protocol custom {
 public typealias Codable = Decodable & Encodable 
 
 @zcCodable
-struct TestModel: Codable {
+final class TestModel: Codable {
     
-    @zcAnnotation(key: ["boolean"], default: 2)
+    @zcAnnotation(key: ["b", "a"], default: 2)
     var boolean: Int = 1
     @zcAnnotation(default: true)
     var use: Bool
@@ -45,6 +45,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let json = #"""
                {
+        "a": 4,
                "status" : 0,
                 "data" : {
                  "salt" : "e7f820",

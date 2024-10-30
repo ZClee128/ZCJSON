@@ -1,7 +1,7 @@
 PODS:
-  - ZCJSON (0.1.8):
+  - ZCJSON (0.1.9):
     - ZCMacro
-  - ZCMacro (0.1.8)
+  - ZCMacro (1.1.1)
 
 DEPENDENCIES:
   - ZCJSON (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZCJSON: 5aa8a61220d178d44a4db061e363c7fd35c6f924
-  ZCMacro: 86b773f6442c86ccce9517ae237fb66cd572c135
+  ZCJSON: a2e0d1ce6a8b91a0794c4b00d5768ce950cef7fe
+  ZCMacro: 24a8e9a00f38c1b87a9c38c4ef21cdc24f1a893a
 
 PODFILE CHECKSUM: fb1937e8a65c7e2bc37c04e0d5f5bbdfa65a50b5
 
