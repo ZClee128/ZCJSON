@@ -30,13 +30,12 @@ public typealias Codable = Decodable & Encodable
 @zcCodable
 final class TestModel: Codable {
     
-    @zcAnnotation(key: ["b", "a"], default: 2)
-    var boolean: Int = 1
-    @zcAnnotation(default: true)
-    var use: Bool
-    var double: String?
-    var nested: Nested?
-    let data: [String: Any]
+    var boolean: Int?
+//    @zcAnnotation(default: true)
+//    var use: Bool
+//    var double: String?
+//    var nested: Nested?
+//    let data: [String: Any]
 }
 
 class ViewController: UIViewController {
@@ -45,7 +44,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let json = #"""
                {
-        "a": 4,
+        "boolean": "4",
                "status" : 0,
                 "data" : {
                  "salt" : "e7f820",
@@ -59,8 +58,8 @@ class ViewController: UIViewController {
             let decoder = JSONDecoder()
             var model = try decoder.decode(TestModel.self, from: json)
             debugPrint("boolean:", model.boolean)
-            debugPrint("use:", model.use)
-            debugPrint("dict:", model.data)
+//            debugPrint("use:", model.use)
+//            debugPrint("dict:", model.data)
             
         } catch {
             debugPrint(error)

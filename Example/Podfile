@@ -4,6 +4,7 @@ platform :ios, '13.0'
 
 target 'ZCJSON_Example' do
   pod 'ZCJSON', :path => '../'
+  pod 'ZCMacro', :path => '/Users/yxd_mbp/Desktop/ng个人/ZCMacro'
   target 'ZCJSON_Tests' do
     inherit! :search_paths
   end

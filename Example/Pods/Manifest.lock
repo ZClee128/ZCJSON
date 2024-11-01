@@ -5,19 +5,18 @@ PODS:
 
 DEPENDENCIES:
   - ZCJSON (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - ZCMacro
+  - "ZCMacro (from `/Users/yxd_mbp/Desktop/ng个人/ZCMacro`)"
 
 EXTERNAL SOURCES:
   ZCJSON:
     :path: "../"
+  ZCMacro:
+    :path: "/Users/yxd_mbp/Desktop/ng个人/ZCMacro"
 
 SPEC CHECKSUMS:
   ZCJSON: a2e0d1ce6a8b91a0794c4b00d5768ce950cef7fe
-  ZCMacro: 24a8e9a00f38c1b87a9c38c4ef21cdc24f1a893a
+  ZCMacro: 701b3eda4caf5f245e0d5ad19c5e393ba3891cac
 
-PODFILE CHECKSUM: fb1937e8a65c7e2bc37c04e0d5f5bbdfa65a50b5
+PODFILE CHECKSUM: 0064101e804db993a886e49e749421451d5a6f3c
 
 COCOAPODS: 1.15.2

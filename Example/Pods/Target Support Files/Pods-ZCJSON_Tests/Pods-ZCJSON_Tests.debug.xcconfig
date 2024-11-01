@@ -3,7 +3,7 @@ FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZCJSON" "
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZCJSON/ZCJSON.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ZCMacro/ZCMacro.framework/Headers"
 OTHER_LDFLAGS = $(inherited) -framework "ZCJSON" -framework "ZCMacro"
-OTHER_SWIFT_FLAGS = $(inherited) -load-plugin-executable ${PODS_ROOT}/ZCMacro/macros/ZCMacroMacros#ZCMacroMacros
+OTHER_SWIFT_FLAGS = $(inherited) -load-plugin-executable /Users/yxd_mbp/Desktop/ng个人/ZCMacro/macros/ZCMacroMacros#ZCMacroMacros
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
