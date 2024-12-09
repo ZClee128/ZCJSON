@@ -31,16 +31,12 @@ public extension Encodable {
 public extension Data {
     func asDecodable<T: Decodable>(_ type: T.Type) -> T? {
         do {
-            // 将 JSON 数据解析为字典
-            let jsonObject = try JSONSerialization.jsonObject(with: self, options: .fragmentsAllowed)
-            guard let dictionary = jsonObject as? [String: Any] else {
-                return nil
-            }
-            // 解析 JSON 成模型
+            // 使用 JSONDecoder 解码，直接支持数组或对象
             let model = try JSONDecoder().decode(type, from: self)
             return model
         } catch {
-            return nil // 解码失败直接返回 nil
+            print("JSON decoding failed: \(error)")
+            return nil
         }
     }
 }
