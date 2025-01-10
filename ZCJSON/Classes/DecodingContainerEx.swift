@@ -11,14 +11,18 @@ import UIKit
 extension KeyedDecodingContainer {
     
     public func decodeIfPresent<T: Decodable>(_ type: T.Type, forKey key: Key) throws -> T? where T: RawRepresentable, T.RawValue: Decodable {
-        guard
-            let rawValue = try decodeIfPresent(type.RawValue.self, forKey: key),
-            let value = T(rawValue: rawValue)
-        else {
+        do {
+            // 尝试解码 RawValue
+            guard let rawValue = try decodeIfPresent(T.RawValue.self, forKey: key) else { return nil }
+            if let value = T(rawValue: rawValue) {
+                return value
+            } else {
+                return nil
+            }
+        } catch {
+            // 捕获解码错误，例如类型不匹配
             return nil
         }
-
-        return value
     }
     
     public func decodeIfPresent(_ type: URL.Type, forKey key: Key) throws -> URL? {
