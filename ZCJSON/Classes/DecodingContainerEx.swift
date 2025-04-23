@@ -37,7 +37,16 @@ extension KeyedDecodingContainer {
     }
     
     public func decodeIfPresent(_ type: Bool.Type, forKey key: Key) throws -> Bool? {
-        if let bool = try? decode(type, forKey: key) {
+        if let value = try? decode(String.self, forKey: key) {
+            switch value.lowercased() {
+            case "true", "yes", "1", "Y", "y", "T", "t", "YES", "TRUE":
+                return true
+            case "false", "no", "0", "N", "n", "F", "f", "NO", "FALSE":
+                return false
+            default:
+                return nil
+            }
+        } else if let bool = try? decode(type, forKey: key) {
             return bool
         } else {
             return nil
