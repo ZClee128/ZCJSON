@@ -10,28 +10,11 @@ import UIKit
 import ZCJSON
 import ZCMacro
 
-public enum Nested: String, Codable, ZCCodable {
-    public static var defaultValue: Nested {
-        return .none
-    }
-    case none
-    case first
-    case sencond
-    case third
-    
-    
-}
-public protocol custom {
-    
-}
-
-public typealias Codable = Decodable & Encodable 
-
 @zcCodable
 @zcMirror
 final class TestModel: Codable {
     
-    var boolean: Int?
+    var boolean: CGFloat?
     @zcAnnotation(key: ["data", "DataModel"])
     var use: DataModel
 //    var double: String?

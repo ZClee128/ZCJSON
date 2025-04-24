@@ -189,6 +189,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				55F1F45A86E4777CDDFDBC53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +263,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		55F1F45A86E4777CDDFDBC53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZCJSON_Tests/Pods-ZCJSON_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZCJSON/ZCJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ZCMacro/ZCMacro.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZCJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZCMacro.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZCJSON_Tests/Pods-ZCJSON_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E86DB681FCA37CEBD392E88F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

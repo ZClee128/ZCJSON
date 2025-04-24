@@ -134,7 +134,7 @@ public extension Bool {
 }
 
 public extension String {
-    enum EMPTY: DefaultValue {
+    enum Default: DefaultValue {
         public static let defaultValue = ""
     }
 }
@@ -142,5 +142,77 @@ public extension String {
 public extension Int {
     enum Default: DefaultValue {
         public static let defaultValue = 0
+    }
+}
+
+public extension Float {
+    enum Default: DefaultValue {
+        public static let defaultValue: Float = 0.0
+    }
+}
+
+public extension Double {
+    enum Default: DefaultValue {
+        public static let defaultValue: Double = 0.0
+    }
+}
+
+public extension CGFloat {
+    enum Default: DefaultValue {
+        public static let defaultValue: Double = 0.0
+    }
+}
+
+public extension UInt {
+    enum Default: DefaultValue {
+        public static let defaultValue: UInt = 0
+    }
+}
+
+public extension UInt8 {
+    enum Default: DefaultValue {
+        public static let defaultValue: UInt8 = 0
+    }
+}
+
+public extension UInt16 {
+    enum Default: DefaultValue {
+        public static let defaultValue: UInt16 = 0
+    }
+}
+
+public extension UInt32 {
+    enum Default: DefaultValue {
+        public static let defaultValue: UInt32 = 0
+    }
+}
+
+public extension UInt64 {
+    enum Default: DefaultValue {
+        public static let defaultValue: UInt64 = 0
+    }
+}
+
+public extension Int8 {
+    enum Default: DefaultValue {
+        public static let defaultValue: Int8 = 0
+    }
+}
+
+public extension Int16 {
+    enum Default: DefaultValue {
+        public static let defaultValue: Int16 = 0
+    }
+}
+
+public extension Int32 {
+    enum Default: DefaultValue {
+        public static let defaultValue: Int32 = 0
+    }
+}
+
+public extension Int64 {
+    enum Default: DefaultValue {
+        public static let defaultValue: Int64 = 0
     }
 }
