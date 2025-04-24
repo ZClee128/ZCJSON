@@ -13,117 +13,118 @@
 		0E53F1E1218134D758EAC3239C03DC40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		10B913D58E1D2ADBE35AF62052FB8F0D /* Pods-ZCJSON_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB8D9057B39B75EBEFA467D34C5D653 /* Pods-ZCJSON_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12542A92EE68886133B88E9B58E8EA90 /* DecodingContainerDictionaryArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C1A5494815D5B50A25746F928500E0 /* DecodingContainerDictionaryArray.swift */; };
-		1A196C369AAAB500B1BB39DF13B5E508 /* ZCMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA2A9B8C646B22C592B6733C49FA8B /* ZCMacro.swift */; };
-		29D6FF16498B0C289EF666FB3EF32E06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		33C3B833E3EFF6233B493B55D65815BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3B27AA35FE1597CE6BC84BB9E0AD3E75 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25F668F61DDF401AF429B37B2A73F8 /* AnyCodable.swift */; };
 		3C349CA28910A5FA6D46F370F872DDBA /* DecodingContainerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE1101D56706C8C6C79538DF846BCB /* DecodingContainerEx.swift */; };
-		5D7C3FB6D6E281F46FA1EAB9A1DEE1AD /* CustomDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D9E836B51B85F1E531B41080EE931 /* CustomDecodable.swift */; };
+		574D0905284BB574F0B10B2499858E58 /* CustomDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525A2DA456FA30AB802584FED060284 /* CustomDecodable.swift */; };
 		639429F153A47D57F1B7AB8091D91399 /* EncodingContainerDictionaryArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E86FD146650A9A5DC9844A543E2407 /* EncodingContainerDictionaryArray.swift */; };
-		6AF767567F0F7BE73F2D7E8C2F1AB12E /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A38D452500C06CC1D1E8685A6A04D /* DefaultValue.swift */; };
 		6D34F4E39A8B3B03C9C96D0779144559 /* Pods-ZCJSON_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80260C682094B49C4F0E9B5B532F6A4D /* Pods-ZCJSON_Example-dummy.m */; };
 		6E291599665D8F84102631E54189C242 /* KeyedDecodingContainerProtocolMultipleKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5972718643E3F8F053FF8EFFE7039E6 /* KeyedDecodingContainerProtocolMultipleKeys.swift */; };
-		72267112D4641176F29D92009D775DBB /* ZCMacro-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D264BDEE2B8BA8E9531535F317A9F5AB /* ZCMacro-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76D71EBCE4532C5BBBFC1C0EE959181E /* ZCJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF4EB7FEC31465993A707D0140EB6C1 /* ZCJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BD459136A9BB4C4EE10BB0A19E4DE98 /* ZCMacro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B66EC37A4A97688F7DFADE7D13A0F /* ZCMacro-dummy.m */; };
+		7AF7CD5F830B80A7536DFCB0D532C9E3 /* ZCMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15895C5F8E52AAFFC13D3E6EE478279A /* ZCMacro.swift */; };
 		8D5F2DFDE564FDA604CF7E3662B62034 /* DictionaryKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B71A8A6D02788CCE12188600A5E79F /* DictionaryKeys.swift */; };
+		9BE45932B05E40566DD42A150A9011DB /* ZCMacro-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D50CEC550F87A5AD1D996D177C3571 /* ZCMacro-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C577D4C07C472D5AC8592B215521D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		AAC69ADCF0134D900FBCEE3DB127DBB8 /* CodableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51991DDC061B12D8321F4A4AD388C5BA /* CodableProtocol.swift */; };
 		BF4CA6E18765AD1AFEC946A9214503C5 /* KeyedDecodingContainerProtocolDefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BB39494AF94A5062C2CB0634A65C5 /* KeyedDecodingContainerProtocolDefaultValues.swift */; };
 		CF0F4F993135E7C2E11643F60ED0533D /* Pods-ZCJSON_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC7D71315DF26368611F626C91F9483 /* Pods-ZCJSON_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB297ABF3620D5EDE0724E099C1F98C7 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E55BB6B0BD11D29CA6D1D56EF760A1 /* AnyCodable.swift */; };
+		D58612012D01A573010296585E87D584 /* ZCMacro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 499E2317DACA4C7836867AE98C2C6178 /* ZCMacro-dummy.m */; };
 		E0AB005A64A03F453C7FAFD8C8000291 /* Pods-ZCJSON_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90922095302A878B8587C0DEDBF26528 /* Pods-ZCJSON_Tests-dummy.m */; };
 		E353CA75F7731C766BF11FE0DAF29902 /* ZCJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BB858EA295677490205E7899CB9EB2 /* ZCJSON-dummy.m */; };
 		E69E03A98B37733A7DA26C1F7370BF34 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41451E4F6C89A88AFC784D38C075F10 /* Codable.swift */; };
 		F910787653FBE449790F05F9C88A1494 /* DefaultValueDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348DFB3841B989B7C634D1FF078E1998 /* DefaultValueDecoder.swift */; };
+		F941AF0421F83F6D66DA9F192896727A /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A2FE01D72EC02233441E88E9769DA /* DefaultValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B39715D6BEA83650429908CD40A6F50 /* PBXContainerItemProxy */ = {
+		117506A0B5A53576C8E230D654746913 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 879F4BC0D117C454707408B44AEE4259;
 			remoteInfo = ZCMacro;
 		};
-		CB3389C8BF31C15E7A6F1708A7F25557 /* PBXContainerItemProxy */ = {
+		556434A22F8D8DB329409DC1F197E48E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 879F4BC0D117C454707408B44AEE4259;
+			remoteInfo = ZCMacro;
+		};
+		633910A477F4D532902730B20001C2BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 356EE61CD24838C9F956C9B6BDFC8C19;
 			remoteInfo = ZCJSON;
 		};
-		D00AB03D89A8AA5EEA226FCF4F81E2E5 /* PBXContainerItemProxy */ = {
+		6C1ECBD45F3BD84ECCAC3D9E65A38928 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 280EE5EE53C91C8F2D56906B4768B7D5;
 			remoteInfo = "Pods-ZCJSON_Example";
 		};
-		DE28E5BED474C56689486B096143CCCE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 879F4BC0D117C454707408B44AEE4259;
-			remoteInfo = ZCMacro;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03967B471917E6A213424EB07865A36A /* ZCJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZCJSON-Info.plist"; sourceTree = "<group>"; };
-		041A38D452500C06CC1D1E8685A6A04D /* DefaultValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValue.swift; path = Sources/ZCMacro/DefaultValue.swift; sourceTree = "<group>"; };
 		043BB39494AF94A5062C2CB0634A65C5 /* KeyedDecodingContainerProtocolDefaultValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainerProtocolDefaultValues.swift; sourceTree = "<group>"; };
 		0EF9C7975B6E24F0A9ABFDA59F3E5304 /* Pods-ZCJSON_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZCJSON_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1360C6F58EDC25DA6C6FF64A26E43915 /* ZCMacro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZCMacro.release.xcconfig; sourceTree = "<group>"; };
+		11DFF5DF236C536DC218CE2631A931EA /* ZCMacro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZCMacro.release.xcconfig; sourceTree = "<group>"; };
+		15895C5F8E52AAFFC13D3E6EE478279A /* ZCMacro.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZCMacro.swift; path = Sources/ZCMacro/ZCMacro.swift; sourceTree = "<group>"; };
+		17E0037531D9FE91557A4D02E3F06CEE /* ZCMacro.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZCMacro.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		180DDEC15E25D74212B4A1EE1A974BA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		2638FD02AEE0BC6387426BDE7FEAB474 /* Pods-ZCJSON_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZCJSON_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2BE0F657EA6DCCEE37F2897CBE680165 /* ZCJSON.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZCJSON.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2BE0F657EA6DCCEE37F2897CBE680165 /* ZCJSON.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZCJSON.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		348DFB3841B989B7C634D1FF078E1998 /* DefaultValueDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValueDecoder.swift; path = ZCJSON/Classes/DefaultValueDecoder.swift; sourceTree = "<group>"; };
+		3525A2DA456FA30AB802584FED060284 /* CustomDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDecodable.swift; path = Sources/ZCMacro/CustomDecodable.swift; sourceTree = "<group>"; };
+		3B25F668F61DDF401AF429B37B2A73F8 /* AnyCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyCodable.swift; path = Sources/ZCMacro/AnyCodable.swift; sourceTree = "<group>"; };
 		3E4963FDFDC7FAEDBCB4E027C2C8A097 /* ZCJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZCJSON.modulemap; sourceTree = "<group>"; };
+		401AD93FE189DB62BF6CF449A2F0BB44 /* ZCMacro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZCMacro.modulemap; sourceTree = "<group>"; };
+		499E2317DACA4C7836867AE98C2C6178 /* ZCMacro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZCMacro-dummy.m"; sourceTree = "<group>"; };
 		4F839FC8B2F1941F4CC525818752A73B /* Pods-ZCJSON_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCJSON_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		514A2FE01D72EC02233441E88E9769DA /* DefaultValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValue.swift; path = Sources/ZCMacro/DefaultValue.swift; sourceTree = "<group>"; };
 		51991DDC061B12D8321F4A4AD388C5BA /* CodableProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableProtocol.swift; path = ZCJSON/Classes/CodableProtocol.swift; sourceTree = "<group>"; };
 		51FC5330D56FC5A344B5D4E2DFCBF155 /* Pods-ZCJSON_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZCJSON_Tests.modulemap"; sourceTree = "<group>"; };
 		55FC518946AFDE3FFBAF27EB746E3766 /* ZCJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZCJSON-prefix.pch"; sourceTree = "<group>"; };
 		56E86FD146650A9A5DC9844A543E2407 /* EncodingContainerDictionaryArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EncodingContainerDictionaryArray.swift; sourceTree = "<group>"; };
 		5712927D029421DD0468FBB272DEE1C1 /* Pods-ZCJSON_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZCJSON_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		58AC1529B10002E82036CD2BA2B108FA /* Pods-ZCJSON_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCJSON_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		62E55BB6B0BD11D29CA6D1D56EF760A1 /* AnyCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyCodable.swift; path = Sources/ZCMacro/AnyCodable.swift; sourceTree = "<group>"; };
 		674C1809F0A13881FF8C49925E976678 /* Pods-ZCJSON_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZCJSON_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6AC7D71315DF26368611F626C91F9483 /* Pods-ZCJSON_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZCJSON_Example-umbrella.h"; sourceTree = "<group>"; };
+		6BE47CDDAFE6E4C8E69CF8F93665A64F /* ZCMacro-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZCMacro-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7318C7890229975FF7706E282C400B38 /* Pods-ZCJSON_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZCJSON_Example-frameworks.sh"; sourceTree = "<group>"; };
-		73B2A222E1B76C21FB6BAA04E6957C85 /* ZCMacro-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZCMacro-prefix.pch"; sourceTree = "<group>"; };
-		74D45C4281D781EB0A706659952B6A89 /* ZCMacro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZCMacro.debug.xcconfig; sourceTree = "<group>"; };
 		75A00ADB76CDAE07BFB1BEC7A12DC500 /* Pods-ZCJSON_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZCJSON_Tests-Info.plist"; sourceTree = "<group>"; };
 		75B71A8A6D02788CCE12188600A5E79F /* DictionaryKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryKeys.swift; sourceTree = "<group>"; };
-		79DFF9FA44FC534797BAE91B83E750B7 /* ZCMacro-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZCMacro-Info.plist"; sourceTree = "<group>"; };
 		7AB8D9057B39B75EBEFA467D34C5D653 /* Pods-ZCJSON_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZCJSON_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7F6B66EC37A4A97688F7DFADE7D13A0F /* ZCMacro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZCMacro-dummy.m"; sourceTree = "<group>"; };
 		80260C682094B49C4F0E9B5B532F6A4D /* Pods-ZCJSON_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZCJSON_Example-dummy.m"; sourceTree = "<group>"; };
-		8697C21959B0D52F63602E6DE3CEAA0A /* ZCMacro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZCMacro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8697C21959B0D52F63602E6DE3CEAA0A /* ZCMacro */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZCMacro; path = ZCMacro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B4E453EA4BA7811403AEEC5F542037 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ZCJSON/Classes/ToJSON.swift; sourceTree = "<group>"; };
-		8A29060568FF2932F25EC843ECD3D198 /* ZCMacro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZCMacro.modulemap; sourceTree = "<group>"; };
 		90922095302A878B8587C0DEDBF26528 /* Pods-ZCJSON_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZCJSON_Tests-dummy.m"; sourceTree = "<group>"; };
-		954D9E836B51B85F1E531B41080EE931 /* CustomDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDecodable.swift; path = Sources/ZCMacro/CustomDecodable.swift; sourceTree = "<group>"; };
+		94D50CEC550F87A5AD1D996D177C3571 /* ZCMacro-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZCMacro-umbrella.h"; sourceTree = "<group>"; };
 		9D0D08E51FFFFB7C70F4826DA1FDF729 /* Pods-ZCJSON_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCJSON_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A02967E5B696EB905635F9D56ECEA0F7 /* ZCMacro-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZCMacro-Info.plist"; sourceTree = "<group>"; };
 		A41451E4F6C89A88AFC784D38C075F10 /* Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Codable.swift; path = ZCJSON/Classes/Codable.swift; sourceTree = "<group>"; };
-		A9DDC4ACAEBF10FEDA0C61A2B85EF410 /* Pods_ZCJSON_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZCJSON_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DDC4ACAEBF10FEDA0C61A2B85EF410 /* Pods-ZCJSON_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZCJSON_Tests"; path = Pods_ZCJSON_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC88CF085B66B72F4E7F9DBE796EEDCF /* ZCJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZCJSON.release.xcconfig; sourceTree = "<group>"; };
-		ADE2E19A6D0F9EC62695F23706672E05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ADE2E19A6D0F9EC62695F23706672E05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B2E6CB4D50DD82EBD534D15F9D2F0C78 /* Pods-ZCJSON_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZCJSON_Example.modulemap"; sourceTree = "<group>"; };
 		B3BB858EA295677490205E7899CB9EB2 /* ZCJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZCJSON-dummy.m"; sourceTree = "<group>"; };
-		C51A86F9AD15A33AD4765186DAA67E8D /* Pods_ZCJSON_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZCJSON_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C72983681B1D272BB0B2783A95B21FD0 /* ZCMacro.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZCMacro.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		C51A86F9AD15A33AD4765186DAA67E8D /* Pods-ZCJSON_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZCJSON_Example"; path = Pods_ZCJSON_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBE1101D56706C8C6C79538DF846BCB /* DecodingContainerEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodingContainerEx.swift; path = ZCJSON/Classes/DecodingContainerEx.swift; sourceTree = "<group>"; };
 		CDF4EB7FEC31465993A707D0140EB6C1 /* ZCJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZCJSON-umbrella.h"; sourceTree = "<group>"; };
-		D264BDEE2B8BA8E9531535F317A9F5AB /* ZCMacro-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZCMacro-umbrella.h"; sourceTree = "<group>"; };
 		D448CDDD1F07AD000598C18821D7FDC5 /* ZCJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZCJSON.debug.xcconfig; sourceTree = "<group>"; };
 		D4F02FD1388D20D42D77D0166FBB66F2 /* Pods-ZCJSON_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZCJSON_Example-Info.plist"; sourceTree = "<group>"; };
-		D8D3FD3B219D34FBBDDF31E57F6105FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DFBA2A9B8C646B22C592B6733C49FA8B /* ZCMacro.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZCMacro.swift; path = Sources/ZCMacro/ZCMacro.swift; sourceTree = "<group>"; };
+		D8D3FD3B219D34FBBDDF31E57F6105FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E3DABD532656454A17AE48A2EDBC5343 /* Pods-ZCJSON_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZCJSON_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E5C1A5494815D5B50A25746F928500E0 /* DecodingContainerDictionaryArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DecodingContainerDictionaryArray.swift; sourceTree = "<group>"; };
-		EAE2321DF2B0A0D829788E94EA0E45B3 /* ZCJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZCJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE2321DF2B0A0D829788E94EA0E45B3 /* ZCJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZCJSON; path = ZCJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5972718643E3F8F053FF8EFFE7039E6 /* KeyedDecodingContainerProtocolMultipleKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainerProtocolMultipleKeys.swift; sourceTree = "<group>"; };
 		F88C8B4D3864C1202D84E8B961DEEDD9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ZCJSON/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		FBDAA7DF27043A58291BCEF39C45069C /* ZCMacro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZCMacro.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,11 +144,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0DE561E8760B56199C34FF93363203B /* Frameworks */ = {
+		9913F04105ED16C26033E26AF72FA6A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29D6FF16498B0C289EF666FB3EF32E06 /* Foundation.framework in Frameworks */,
+				A4C577D4C07C472D5AC8592B215521D2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,31 +178,30 @@
 			path = "Example/Pods/Target Support Files/ZCJSON";
 			sourceTree = "<group>";
 		};
-		0FEBEF423DA4C7A7C62DC5F2F1202D0C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8A29060568FF2932F25EC843ECD3D198 /* ZCMacro.modulemap */,
-				7F6B66EC37A4A97688F7DFADE7D13A0F /* ZCMacro-dummy.m */,
-				79DFF9FA44FC534797BAE91B83E750B7 /* ZCMacro-Info.plist */,
-				73B2A222E1B76C21FB6BAA04E6957C85 /* ZCMacro-prefix.pch */,
-				D264BDEE2B8BA8E9531535F317A9F5AB /* ZCMacro-umbrella.h */,
-				74D45C4281D781EB0A706659952B6A89 /* ZCMacro.debug.xcconfig */,
-				1360C6F58EDC25DA6C6FF64A26E43915 /* ZCMacro.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../ZCJSON/Example/Pods/Target Support Files/ZCMacro";
-			sourceTree = "<group>";
-		};
 		14973CCB51823B03E7DEA173B993B208 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C51A86F9AD15A33AD4765186DAA67E8D /* Pods_ZCJSON_Example.framework */,
-				A9DDC4ACAEBF10FEDA0C61A2B85EF410 /* Pods_ZCJSON_Tests.framework */,
-				EAE2321DF2B0A0D829788E94EA0E45B3 /* ZCJSON.framework */,
-				8697C21959B0D52F63602E6DE3CEAA0A /* ZCMacro.framework */,
+				C51A86F9AD15A33AD4765186DAA67E8D /* Pods-ZCJSON_Example */,
+				A9DDC4ACAEBF10FEDA0C61A2B85EF410 /* Pods-ZCJSON_Tests */,
+				EAE2321DF2B0A0D829788E94EA0E45B3 /* ZCJSON */,
+				8697C21959B0D52F63602E6DE3CEAA0A /* ZCMacro */,
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		2168D0D14AD1FF60CEC82ED874B63439 /* ZCMacro */ = {
+			isa = PBXGroup;
+			children = (
+				3B25F668F61DDF401AF429B37B2A73F8 /* AnyCodable.swift */,
+				3525A2DA456FA30AB802584FED060284 /* CustomDecodable.swift */,
+				514A2FE01D72EC02233441E88E9769DA /* DefaultValue.swift */,
+				15895C5F8E52AAFFC13D3E6EE478279A /* ZCMacro.swift */,
+				7663ABFDE9A9D1213029C7E5B611B280 /* Pod */,
+				CEEA12CE3CAFDC7BD07EB1057BC1EAD4 /* Support Files */,
+			);
+			name = ZCMacro;
+			path = "/Users/yxd_mbp/Desktop/ng个人/ZCMacro";
+			sourceTree = "<absolute>";
 		};
 		233DB364BE41955A593A251DC96C66F9 /* Pods-ZCJSON_Example */ = {
 			isa = PBXGroup;
@@ -224,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				526404441AD460E907C7EC5C7DF31423 /* ZCJSON */,
-				E3A31E767A97B4D3B2E9840884DC0337 /* ZCMacro */,
+				2168D0D14AD1FF60CEC82ED874B63439 /* ZCMacro */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -279,6 +279,15 @@
 			path = "Target Support Files/Pods-ZCJSON_Tests";
 			sourceTree = "<group>";
 		};
+		7663ABFDE9A9D1213029C7E5B611B280 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				180DDEC15E25D74212B4A1EE1A974BA6 /* README.md */,
+				17E0037531D9FE91557A4D02E3F06CEE /* ZCMacro.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		A1FFE793EF71D1EE59B16DA9729002E4 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +311,21 @@
 			path = ZCJSON/Classes/Codable;
 			sourceTree = "<group>";
 		};
+		CEEA12CE3CAFDC7BD07EB1057BC1EAD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				401AD93FE189DB62BF6CF449A2F0BB44 /* ZCMacro.modulemap */,
+				499E2317DACA4C7836867AE98C2C6178 /* ZCMacro-dummy.m */,
+				A02967E5B696EB905635F9D56ECEA0F7 /* ZCMacro-Info.plist */,
+				6BE47CDDAFE6E4C8E69CF8F93665A64F /* ZCMacro-prefix.pch */,
+				94D50CEC550F87A5AD1D996D177C3571 /* ZCMacro-umbrella.h */,
+				FBDAA7DF27043A58291BCEF39C45069C /* ZCMacro.debug.xcconfig */,
+				11DFF5DF236C536DC218CE2631A931EA /* ZCMacro.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../ZCJSON/Example/Pods/Target Support Files/ZCMacro";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -321,31 +345,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E3A31E767A97B4D3B2E9840884DC0337 /* ZCMacro */ = {
-			isa = PBXGroup;
-			children = (
-				62E55BB6B0BD11D29CA6D1D56EF760A1 /* AnyCodable.swift */,
-				954D9E836B51B85F1E531B41080EE931 /* CustomDecodable.swift */,
-				041A38D452500C06CC1D1E8685A6A04D /* DefaultValue.swift */,
-				DFBA2A9B8C646B22C592B6733C49FA8B /* ZCMacro.swift */,
-				EC52BA9A93A41D57E05CA731A72DB5D3 /* Pod */,
-				0FEBEF423DA4C7A7C62DC5F2F1202D0C /* Support Files */,
-			);
-			name = ZCMacro;
-			path = "/Users/yxd_mbp/Desktop/ng个人/ZCMacro";
-			sourceTree = "<absolute>";
-		};
-		EC52BA9A93A41D57E05CA731A72DB5D3 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				C72983681B1D272BB0B2783A95B21FD0 /* ZCMacro.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2034A03A35F40DC14797FD5BD5431CB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE45932B05E40566DD42A150A9011DB /* ZCMacro-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C3B0B512D0FDDDD31FFB75688CFC551 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,14 +380,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFE25F8F30F026C6DF6C1041DA2285E7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72267112D4641176F29D92009D775DBB /* ZCMacro-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -393,12 +395,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				96F37D5F0647EDC400E3F0D6FF8E4CB4 /* PBXTargetDependency */,
-				BD4A068A51FF30AC981001683C3F130F /* PBXTargetDependency */,
+				A652F629B1ACD78C4893F9F112DDC49F /* PBXTargetDependency */,
+				2FCA5594F8136ED2FEE3B34721D79CEE /* PBXTargetDependency */,
 			);
 			name = "Pods-ZCJSON_Example";
 			productName = Pods_ZCJSON_Example;
-			productReference = C51A86F9AD15A33AD4765186DAA67E8D /* Pods_ZCJSON_Example.framework */;
+			productReference = C51A86F9AD15A33AD4765186DAA67E8D /* Pods-ZCJSON_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		356EE61CD24838C9F956C9B6BDFC8C19 /* ZCJSON */ = {
@@ -413,21 +415,21 @@
 			buildRules = (
 			);
 			dependencies = (
-				799E8A45CEFC0147112268E2FC29C181 /* PBXTargetDependency */,
+				1580CE2865F422B7F1B713F0F437552D /* PBXTargetDependency */,
 			);
 			name = ZCJSON;
 			productName = ZCJSON;
-			productReference = EAE2321DF2B0A0D829788E94EA0E45B3 /* ZCJSON.framework */;
+			productReference = EAE2321DF2B0A0D829788E94EA0E45B3 /* ZCJSON */;
 			productType = "com.apple.product-type.framework";
 		};
 		879F4BC0D117C454707408B44AEE4259 /* ZCMacro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDAE496B51AF4BA7929B8EAB56F83B0C /* Build configuration list for PBXNativeTarget "ZCMacro" */;
+			buildConfigurationList = 4C39352C4384BF478BDED79380C7AA76 /* Build configuration list for PBXNativeTarget "ZCMacro" */;
 			buildPhases = (
-				AFE25F8F30F026C6DF6C1041DA2285E7 /* Headers */,
-				0C62BFB399079E57F1BE1D1C71DE619E /* Sources */,
-				D0DE561E8760B56199C34FF93363203B /* Frameworks */,
-				FE19CB0B1ED73B85A44F43E44C9A2F85 /* Resources */,
+				2034A03A35F40DC14797FD5BD5431CB8 /* Headers */,
+				99F03716AF0822F50706EE93F1B915EE /* Sources */,
+				9913F04105ED16C26033E26AF72FA6A8 /* Frameworks */,
+				36465B5C3AD0240F8FA748FA2587460C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -435,7 +437,7 @@
 			);
 			name = ZCMacro;
 			productName = ZCMacro;
-			productReference = 8697C21959B0D52F63602E6DE3CEAA0A /* ZCMacro.framework */;
+			productReference = 8697C21959B0D52F63602E6DE3CEAA0A /* ZCMacro */;
 			productType = "com.apple.product-type.framework";
 		};
 		B0F1755B894C207C9963FCCF269AE06A /* Pods-ZCJSON_Tests */ = {
@@ -450,11 +452,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				C36876018E24D82BA61B0E6F0CEE2F4A /* PBXTargetDependency */,
+				5724DF1572C8457516C1EC5877A75CC0 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZCJSON_Tests";
 			productName = Pods_ZCJSON_Tests;
-			productReference = A9DDC4ACAEBF10FEDA0C61A2B85EF410 /* Pods_ZCJSON_Tests.framework */;
+			productReference = A9DDC4ACAEBF10FEDA0C61A2B85EF410 /* Pods-ZCJSON_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -475,6 +477,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
 			productRefGroup = 14973CCB51823B03E7DEA173B993B208 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,6 +498,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36465B5C3AD0240F8FA748FA2587460C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D9CF781B195DB4405CE3110E492A1AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,28 +519,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE19CB0B1ED73B85A44F43E44C9A2F85 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C62BFB399079E57F1BE1D1C71DE619E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB297ABF3620D5EDE0724E099C1F98C7 /* AnyCodable.swift in Sources */,
-				5D7C3FB6D6E281F46FA1EAB9A1DEE1AD /* CustomDecodable.swift in Sources */,
-				6AF767567F0F7BE73F2D7E8C2F1AB12E /* DefaultValue.swift in Sources */,
-				1A196C369AAAB500B1BB39DF13B5E508 /* ZCMacro.swift in Sources */,
-				8BD459136A9BB4C4EE10BB0A19E4DE98 /* ZCMacro-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3D0765A65414F3F352C5F917DF18F222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,6 +549,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99F03716AF0822F50706EE93F1B915EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B27AA35FE1597CE6BC84BB9E0AD3E75 /* AnyCodable.swift in Sources */,
+				574D0905284BB574F0B10B2499858E58 /* CustomDecodable.swift in Sources */,
+				F941AF0421F83F6D66DA9F192896727A /* DefaultValue.swift in Sources */,
+				7AF7CD5F830B80A7536DFCB0D532C9E3 /* ZCMacro.swift in Sources */,
+				D58612012D01A573010296585E87D584 /* ZCMacro-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A50AE7D81F4DFD175EE8A740BE74901F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,29 +572,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		799E8A45CEFC0147112268E2FC29C181 /* PBXTargetDependency */ = {
+		1580CE2865F422B7F1B713F0F437552D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZCMacro;
 			target = 879F4BC0D117C454707408B44AEE4259 /* ZCMacro */;
-			targetProxy = 7B39715D6BEA83650429908CD40A6F50 /* PBXContainerItemProxy */;
+			targetProxy = 117506A0B5A53576C8E230D654746913 /* PBXContainerItemProxy */;
 		};
-		96F37D5F0647EDC400E3F0D6FF8E4CB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZCJSON;
-			target = 356EE61CD24838C9F956C9B6BDFC8C19 /* ZCJSON */;
-			targetProxy = CB3389C8BF31C15E7A6F1708A7F25557 /* PBXContainerItemProxy */;
-		};
-		BD4A068A51FF30AC981001683C3F130F /* PBXTargetDependency */ = {
+		2FCA5594F8136ED2FEE3B34721D79CEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZCMacro;
 			target = 879F4BC0D117C454707408B44AEE4259 /* ZCMacro */;
-			targetProxy = DE28E5BED474C56689486B096143CCCE /* PBXContainerItemProxy */;
+			targetProxy = 556434A22F8D8DB329409DC1F197E48E /* PBXContainerItemProxy */;
 		};
-		C36876018E24D82BA61B0E6F0CEE2F4A /* PBXTargetDependency */ = {
+		5724DF1572C8457516C1EC5877A75CC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZCJSON_Example";
 			target = 280EE5EE53C91C8F2D56906B4768B7D5 /* Pods-ZCJSON_Example */;
-			targetProxy = D00AB03D89A8AA5EEA226FCF4F81E2E5 /* PBXContainerItemProxy */;
+			targetProxy = 6C1ECBD45F3BD84ECCAC3D9E65A38928 /* PBXContainerItemProxy */;
+		};
+		A652F629B1ACD78C4893F9F112DDC49F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZCJSON;
+			target = 356EE61CD24838C9F956C9B6BDFC8C19 /* ZCJSON */;
+			targetProxy = 633910A477F4D532902730B20001C2BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -630,9 +633,9 @@
 			};
 			name = Debug;
 		};
-		064042B2BFBC5F8D07536A3A443FA971 /* Debug */ = {
+		1E13DD5A92C6185098E5A069BB22479D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74D45C4281D781EB0A706659952B6A89 /* ZCMacro.debug.xcconfig */;
+			baseConfigurationReference = 11DFF5DF236C536DC218CE2631A931EA /* ZCMacro.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -657,10 +660,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.9;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -853,7 +857,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -892,39 +897,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		B2F6C98BE5CCC17460E8E10DCFADA03B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1360C6F58EDC25DA6C6FF64A26E43915 /* ZCMacro.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZCMacro/ZCMacro-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZCMacro/ZCMacro-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZCMacro/ZCMacro.modulemap";
-				PRODUCT_MODULE_NAME = ZCMacro;
-				PRODUCT_NAME = ZCMacro;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		C69A772A74D57D54775874D0368AB4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -991,6 +963,38 @@
 			};
 			name = Release;
 		};
+		DD319FF5598F17D44E29637A82601176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBDAA7DF27043A58291BCEF39C45069C /* ZCMacro.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZCMacro/ZCMacro-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZCMacro/ZCMacro-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZCMacro/ZCMacro.modulemap";
+				PRODUCT_MODULE_NAME = ZCMacro;
+				PRODUCT_NAME = ZCMacro;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1012,6 +1016,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4C39352C4384BF478BDED79380C7AA76 /* Build configuration list for PBXNativeTarget "ZCMacro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD319FF5598F17D44E29637A82601176 /* Debug */,
+				1E13DD5A92C6185098E5A069BB22479D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		819D0555F98A344CF2447B3A23023D11 /* Build configuration list for PBXNativeTarget "Pods-ZCJSON_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1026,15 +1039,6 @@
 			buildConfigurations = (
 				C69A772A74D57D54775874D0368AB4EA /* Debug */,
 				C75C123542CC01F3DACC8C9575989426 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDAE496B51AF4BA7929B8EAB56F83B0C /* Build configuration list for PBXNativeTarget "ZCMacro" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				064042B2BFBC5F8D07536A3A443FA971 /* Debug */,
-				B2F6C98BE5CCC17460E8E10DCFADA03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

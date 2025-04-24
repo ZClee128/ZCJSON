@@ -1,7 +1,7 @@
 PODS:
-  - ZCJSON (0.1.9):
+  - ZCJSON (0.2.0):
     - ZCMacro
-  - ZCMacro (1.1.1)
+  - ZCMacro (1.1.8)
 
 DEPENDENCIES:
   - ZCJSON (from `../`)
@@ -14,8 +14,8 @@ EXTERNAL SOURCES:
     :path: "/Users/yxd_mbp/Desktop/ng个人/ZCMacro"
 
 SPEC CHECKSUMS:
-  ZCJSON: a2e0d1ce6a8b91a0794c4b00d5768ce950cef7fe
-  ZCMacro: 701b3eda4caf5f245e0d5ad19c5e393ba3891cac
+  ZCJSON: 32f28691230d59f7414fb6d3024622002ba2cae6
+  ZCMacro: ae8478aaf17616aae5b6cd6881cf580b7e040d79
 
 PODFILE CHECKSUM: 0064101e804db993a886e49e749421451d5a6f3c
 

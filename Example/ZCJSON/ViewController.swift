@@ -28,14 +28,21 @@ public protocol custom {
 public typealias Codable = Decodable & Encodable 
 
 @zcCodable
+@zcMirror
 final class TestModel: Codable {
     
     var boolean: Int?
-//    @zcAnnotation(default: true)
-//    var use: Bool
+    @zcAnnotation(key: ["data", "DataModel"])
+    var use: DataModel
 //    var double: String?
 //    var nested: Nested?
 //    let data: [String: Any]
+}
+@zcCodable
+class DataModel: Codable {
+    var salt: String?
+    var expires_time: Int?
+    var uid: String?
 }
 
 class ViewController: UIViewController {
@@ -44,8 +51,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let json = #"""
                {
-        "boolean": "4",
-               "status" : 0,
+                "boolean": "4",
+                "status" : 0,
                 "data" : {
                  "salt" : "e7f820",
                  "expires_time" : 0,
@@ -55,11 +62,13 @@ class ViewController: UIViewController {
         """#.data(using: .utf8)!
         
         do {
-            let decoder = JSONDecoder()
-            var model = try decoder.decode(TestModel.self, from: json)
-            debugPrint("boolean:", model.boolean)
-//            debugPrint("use:", model.use)
-//            debugPrint("dict:", model.data)
+            var model = json.asDecodable(TestModel.self)
+            debugPrint("boolean:", model?.boolean)
+//            debugPrint("use:", model?.use)
+//            debugPrint("dict:", model?.data)
+            if let use = model?.use {
+                print("use: \(use)")
+            }
             
         } catch {
             debugPrint(error)
