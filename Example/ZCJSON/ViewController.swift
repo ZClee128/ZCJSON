@@ -37,21 +37,23 @@ class ViewController: UIViewController {
                 "boolean": "4",
                 "status" : 0,
                 "data" : {
-                 "salt" : "e7f820",
-                 "expires_time" : 0,
-                 "uid" : "",
+                 "cat" : {
+                         "salt" : "e7f820",
+                         "expires_time" : 0,
+                         "uid" : "",
+                        }
                  }
              }
         """#.data(using: .utf8)!
         
         do {
-            var model = json.asDecodable(TestModel.self)
-            debugPrint("boolean:", model?.boolean)
+            var model = json.asDecodable(DataModel.self, designatedPath: "data.cat")
+            debugPrint("model:", model?.salt)
 //            debugPrint("use:", model?.use)
 //            debugPrint("dict:", model?.data)
-            if let use = model?.use {
-                print("use: \(use)")
-            }
+//            if let use = model?.use {
+//                print("use: \(use)")
+//            }
             
         } catch {
             debugPrint(error)

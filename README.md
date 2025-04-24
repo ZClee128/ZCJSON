@@ -56,6 +56,29 @@ let model = data.asDecodable(Model.self)
 
 // Model to JSON string
 model.toJSONString()
+
+// Parse with designated path
+let jsonString = """
+{
+    "code": 200,
+    "msg": "success",
+    "data": {
+        "cat": {
+            "id": 12345,
+            "name": "Kitty"
+        }
+    }
+}
+"""
+
+struct Cat: Codable {
+    var id: Int64
+    var name: String
+}
+
+if let cat = jsonString.asDecodable(Cat.self, designatedPath: "data.cat") {
+    print(cat.name) // Prints "Kitty"
+}
 ```
 
 ### Default Values

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZCJSON'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = '这是一个原生增强版json解析库，不需要更改遵循Codable协议，完美符合官方'
 
 # This description is used to generate tags and improve search results.

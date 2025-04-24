@@ -54,6 +54,29 @@ let model = data.asDecodable(Model.self)
 
 // 模型转 JSON 字符串
 model.toJSONString()
+
+// 指定路径解析
+let jsonString = """
+{
+    "code": 200,
+    "msg": "success",
+    "data": {
+        "cat": {
+            "id": 12345,
+            "name": "Kitty"
+        }
+    }
+}
+"""
+
+struct Cat: Codable {
+    var id: Int64
+    var name: String
+}
+
+if let cat = jsonString.asDecodable(Cat.self, designatedPath: "data.cat") {
+    print(cat.name) // 输出 "Kitty"
+}
 ```
 
 ### 默认值处理
