@@ -87,6 +87,7 @@ struct Product: Codable {
 处理动态 JSON 结构：
 
 ```swift
+@zcCodable
 struct DynamicModel: Codable {
     var data: [String: Any]
     var items: [Any]
@@ -136,6 +137,7 @@ class UserModel: BaseModel {
 ### 包含多个特性的复杂模型
 
 ```swift
+@zcCodable
 struct ComplexModel: Codable {
     // 默认值
     @Default<Bool.True>
@@ -238,6 +240,7 @@ if let decoded = jsonData.asDecodable(TestModel.self) {
 处理动态 JSON 结构：
 
 ```swift
+@zcCodable
 struct TestAnyModel: Codable {
     var age: Any
     @zcAnnotation(key: ["age1"], ignore: true)
@@ -272,6 +275,7 @@ if let decoded = jsonData.asDecodable(TestAnyModel.self) {
 在解析时忽略特定字段：
 
 ```swift
+@zcCodable
 struct TestAnyModel: Codable {
     @zcAnnotation(key: ["age1"], ignore: true)
     var age1: Float = 40
@@ -384,4 +388,8 @@ ZClee128, 876231865@qq.com
 
 ## 许可证
 
-ZCJSON 使用 MIT 许可证。详见 LICENSE 文件。 
+ZCJSON 使用 MIT 许可证。详见 LICENSE 文件。
+
+## 支持
+
+如果遇到解析问题或有任何疑问，请联系我或加入 QQ 群：982321096 

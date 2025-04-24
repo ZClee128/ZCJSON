@@ -89,6 +89,7 @@ struct Product: Codable {
 Handle dynamic JSON structures with Any type:
 
 ```swift
+@zcCodable
 struct DynamicModel: Codable {
     var data: [String: Any]
     var items: [Any]
@@ -183,6 +184,7 @@ class UserModel: BaseModel {
 ### Complex Model with Multiple Features
 
 ```swift
+@zcCodable
 struct ComplexModel: Codable {
     // Default values
     @Default<Bool.True>
@@ -224,6 +226,10 @@ ZClee128, 876231865@qq.com
 ## License
 
 ZCJSON is available under the MIT license. See the LICENSE file for more info.
+
+## Support
+
+If you encounter any parsing issues or have questions, feel free to contact me or join our QQ group: 982321096
 
 ## 🧪 单元测试说明
 
@@ -324,6 +330,7 @@ if let decoded = jsonData.asDecodable(TestModel.self) {
 Handle dynamic JSON structures with Any type:
 
 ```swift
+@zcCodable
 struct TestAnyModel: Codable {
     var age: Any
     @zcAnnotation(key: ["age1"], ignore: true)
@@ -358,6 +365,7 @@ if let decoded = jsonData.asDecodable(TestAnyModel.self) {
 Ignore specific fields during parsing:
 
 ```swift
+@zcCodable
 struct TestAnyModel: Codable {
     @zcAnnotation(key: ["age1"], ignore: true)
     var age1: Float = 40
