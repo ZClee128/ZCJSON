@@ -14,16 +14,23 @@ let package = Package(
     ],
     dependencies: [
         // 添加第三方库的依赖
-        .package(url: "https://github.com/ZClee128/ZCMacro.git", from: "1.1.3"),
+        .package(url: "https://github.com/ZClee128/ZCMacro.git", branch: "main"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "ZCJSON",
-            dependencies: ["ZCMacro"]),
+            dependencies: ["ZCMacro"],
+            path: "ZCJSON",
+            sources: ["Classes"],
+            swiftSettings: [
+                .enableExperimentalFeature("Macros")
+            ]
+        ),
         .testTarget(
             name: "ZCJSONTests",
-            dependencies: ["ZCJSON"]),
+            dependencies: ["ZCJSON"],
+            path: "Example/Tests"),
     ]
 )
