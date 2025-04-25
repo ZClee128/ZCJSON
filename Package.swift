@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "ZCJSON",
+    defaultLocalization: "en",
     platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6), .macCatalyst(.v13)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -22,8 +23,8 @@ let package = Package(
         .target(
             name: "ZCJSON",
             dependencies: ["ZCMacro"],
-            path: "ZCJSON",
-            sources: ["Classes"],
+            path: ".",
+            sources: ["ZCJSON/Classes"],
             swiftSettings: [
                 .enableExperimentalFeature("Macros")
             ]
