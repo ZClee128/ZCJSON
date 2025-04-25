@@ -254,23 +254,23 @@ ZCJSON is available under the MIT license. See the LICENSE file for more info.
 
 If you encounter any parsing issues or have questions, feel free to contact me or join our QQ group: 982321096
 
-## 🧪 单元测试说明
+## 🧪 Unit Test Coverage
 
-ZCJSON 内置了丰富的单元测试，覆盖常见解析场景，包括但不限于：
+ZCJSON comes with extensive unit tests that cover common JSON parsing scenarios, including but not limited to:
 
-- ✅ 字段缺失时默认值解析（Int、Float、Bool、String 等）
-- ✅ 字符串转数字：如 `"10"` → `Int`、`CGFloat`、`Double`
-- ✅ 支持 `[String: Any]` 和 `[Any]` 混合模型解析
-- ✅ `Any` 类型字段容错解析
-- ✅ 使用 `@Default` 包装器实现默认值声明式支持
-- ✅ 多种基础数值类型扩展：支持 `UInt8/16/32/64`、`Int8/16/32/64`
-- ✅ 枚举类型容错解析（`CaseDefaultsFirst`）
-- ✅ 字段忽略与字段重命名解析
-- ✅ 宏生成的模型与自定义手动实现兼容测试
+- ✅ Default value fallback when fields are missing (`Int`, `Float`, `Bool`, `String`, etc.)
+- ✅ Type conversion from strings to numbers: e.g. `"10"` → `Int`, `CGFloat`, `Double`
+- ✅ Supports hybrid model decoding of `[String: Any]` and `[Any]`
+- ✅ Graceful decoding of dynamic `Any` values
+- ✅ Declarative default values via the `@Default` property wrapper
+- ✅ Extended default support for numeric types: `UInt8/16/32/64`, `Int8/16/32/64`
+- ✅ Enum fallback decoding with `CaseDefaultsFirst`
+- ✅ Field ignoring and key remapping via `@zcAnnotation`
+- ✅ Compatibility between macro-generated models and manually implemented models
 
-> 💡 示例：测试文件 `Tests.swift` 中包含了完整的 `asDecodable()` 使用案例，验证 `@zcCodable` 的智能容错行为。
+> 💡 Example: See `Tests.swift` for full use of `.asDecodable()` and validation of `@zcCodable` error-tolerant decoding behavior.
 
-开发者可直接运行 `⌘U` 或 `Product -> Test` 来验证功能稳定性。
+Run tests via `⌘U` or `Product -> Test` to verify parsing stability and behavior.
 
 ## Unit Test Examples
 
